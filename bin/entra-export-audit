@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Launcher: runs the built C# tool. Build first with `make build`.
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+export DOTNET_NOLOGO=1 DOTNET_CLI_TELEMETRY_OPTOUT=1
+exec dotnet "$DIR/build/out/entra-export-audit.dll" "$@"

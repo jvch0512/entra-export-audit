@@ -1,0 +1,18 @@
+{
+  "value": [
+    { "id": "a1", "userPrincipalName": "ga1@fabrikam.com", "accountEnabled": true, "isMfaRegistered": true },
+    { "id": "a2", "userPrincipalName": "ga2@fabrikam.com", "accountEnabled": true, "isMfaRegistered": true },
+    { "id": "a3", "userPrincipalName": "ga3@fabrikam.com", "accountEnabled": true, "isMfaRegistered": true },
+    { "id": "a4", "userPrincipalName": "ga4@fabrikam.com", "accountEnabled": true, "isMfaRegistered": true },
+    { "id": "a5", "userPrincipalName": "ga5@fabrikam.com", "accountEnabled": true, "isMfaRegistered": true },
+    { "id": "a6", "userPrincipalName": "ga6@fabrikam.com", "accountEnabled": true, "isMfaRegistered": true }
+  ],
+  "roleAssignments": [
+    { "principalName": "ga1@fabrikam.com", "roleName": "Global Administrator", "endDateTime": "2027-01-01T00:00:00Z" },
+    { "principalName": "ga2@fabrikam.com", "roleName": "Global Administrator", "endDateTime": "2027-01-01T00:00:00Z" },
+    { "principalName": "ga3@fabrikam.com", "roleName": "Global Administrator", "endDateTime": "2027-01-01T00:00:00Z" },
+    { "principalName": "ga4@fabrikam.com", "roleName": "Global Administrator", "endDateTime": "2027-01-01T00:00:00Z" },
+    { "principalName": "ga5@fabrikam.com", "roleName": "Global Administrator", "endDateTime": "2027-01-01T00:00:00Z" },
+    { "principalName": "ga6@fabrikam.com", "roleName": "Global Administrator", "endDateTime": "2027-01-01T00:00:00Z" }
+  ]
+}

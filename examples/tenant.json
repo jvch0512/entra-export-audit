@@ -1,0 +1,18 @@
+{
+  "users": [
+    { "id": "u1", "userPrincipalName": "ana.admin@contoso.com", "accountEnabled": true, "userType": "Member", "isMfaRegistered": false, "signInActivity": { "lastSignInDateTime": "2026-11-10T08:00:00Z" } },
+    { "id": "u2", "userPrincipalName": "bruno.ops@contoso.com", "accountEnabled": true, "userType": "Member", "isMfaRegistered": true, "signInActivity": { "lastSignInDateTime": "2026-11-12T09:30:00Z" } },
+    { "id": "u3", "userPrincipalName": "partner_ext#EXT#@contoso.com", "accountEnabled": true, "userType": "Guest", "isMfaRegistered": true, "signInActivity": { "lastSignInDateTime": "2026-10-30T10:00:00Z" } },
+    { "id": "u4", "userPrincipalName": "carla.sales@contoso.com", "accountEnabled": true, "userType": "Member", "isMfaRegistered": false, "signInActivity": { "lastSignInDateTime": "2026-11-14T07:00:00Z" } },
+    { "id": "u5", "userPrincipalName": "old.contractor@contoso.com", "accountEnabled": true, "userType": "Member", "isMfaRegistered": true, "signInActivity": { "lastSignInDateTime": "2026-05-01T07:00:00Z" } },
+    { "id": "u6", "userPrincipalName": "leaver@contoso.com", "accountEnabled": false, "userType": "Member", "isMfaRegistered": true },
+    { "id": "u7", "userPrincipalName": "dani.helpdesk@contoso.com", "accountEnabled": true, "userType": "Member", "signInActivity": { "lastSignInDateTime": "2026-11-15T07:00:00Z" } }
+  ],
+  "roleAssignments": [
+    { "principalId": "u1", "roleDefinitionName": "Global Administrator", "assignmentType": "Active" },
+    { "principalId": "u2", "roleDefinitionName": "Exchange Administrator", "assignmentType": "Eligible" },
+    { "principalId": "u3", "roleDefinitionName": "User Administrator", "assignmentType": "Active", "endDateTime": "2026-12-31T00:00:00Z" },
+    { "principalId": "u6", "roleDefinitionName": "Security Administrator", "assignmentType": "Active" },
+    { "principalId": "u7", "roleDefinitionName": "Reports Reader", "assignmentType": "Active" }
+  ]
+}

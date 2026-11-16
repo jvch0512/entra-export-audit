@@ -1,0 +1,17 @@
+3 files, 8 findings
+CRITICAL ENT003 tenant.json#partner_ext#EXT#@contoso.com
+         partner_ext#EXT#@contoso.com is a guest holding User Administrator
+HIGH     ENT007 many-admins.json
+         6 Global Administrators, keep it to five or fewer
+HIGH     ENT001 tenant.json#ana.admin@contoso.com
+         ana.admin@contoso.com holds Global Administrator without MFA registered
+MEDIUM   ENT002 tenant.json#ana.admin@contoso.com
+         ana.admin@contoso.com has a permanent active Global Administrator assignment
+MEDIUM   ENT004 tenant.json#old.contractor@contoso.com
+         old.contractor@contoso.com has not signed in for 198 days
+MEDIUM   ENT005 tenant.json#carla.sales@contoso.com
+         carla.sales@contoso.com has no MFA registered
+LOW      ENT006 tenant.json#leaver@contoso.com
+         leaver@contoso.com is disabled but still holds Security Administrator
+INFO     ENT000 other.json
+         no users found, ignored
