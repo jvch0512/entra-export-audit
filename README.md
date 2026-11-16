@@ -2,6 +2,8 @@
 
 entra-export-audit reads a JSON export of Entra ID users and directory role assignments (Microsoft Graph shape, or a simple export with `users` and `roleAssignments`) and reports identity hygiene problems: privileged users without MFA, permanent active privileged assignments, guests holding admin roles, enabled accounts that have not signed in for 90 days, disabled accounts that still hold roles and more than five Global Administrators.
 
+![Terminal demo of entra-export-audit on its sample data](docs/demo.svg)
+
 **Live demo:** https://jvch0512.github.io/entra-export-audit/ (Synthetic data.)
 
 C# on .NET 8, no packages. The demo page is rendered from the tool's `--tsv` output by `scripts/site.py` (Python 3, only needed to regenerate the page).
@@ -48,3 +50,13 @@ make test    # A C# test program: every rule on good and bad exports, date handl
 ```
 
 MIT.
+
+## Code scanning (SARIF)
+
+`scripts/tsv2sarif.py` converts the `--tsv` output into SARIF 2.1.0, so findings show up in GitHub code scanning:
+
+```sh
+bin/entra-export-audit examples --today 2026-11-16 --tsv | python3 scripts/tsv2sarif.py --tool entra-export-audit --prefix examples > results.sarif
+```
+
+Upload `results.sarif` with `github/codeql-action/upload-sarif`. Severities map to SARIF levels (critical and high to error, medium to warning, low and info to note) and to a `security-severity` score.

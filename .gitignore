@@ -3,3 +3,4 @@ obj/
 bin/Debug/
 bin/Release/
 *.dll
+results.sarif
